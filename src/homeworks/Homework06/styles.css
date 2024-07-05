@@ -1,0 +1,6 @@
+.cards-wrapper{
+    display: flex;
+    flex: 1;
+    padding: 50px;
+    gap: 30px;
+}

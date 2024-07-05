@@ -1,0 +1,18 @@
+.car-card{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 250px;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    gap: 8px;
+}
+
+.car-info{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
