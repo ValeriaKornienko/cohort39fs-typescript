@@ -1,5 +1,4 @@
 import "./styles.css";
-import Car_Card from "../../components/Car_Card/Car_Card";
 
 
 function Homework06() {
@@ -17,13 +16,13 @@ function Homework06() {
     { brand: "Audi", price: 50000, isDiesel: true },
   ];
 
-  const cards = cars.map((Car) => {
+  const cards = cars.map((car) => {
     return (
-        <Car_Card
-         brand={Car.brand}
-         price={Car.price}
-         isDiesel={Car.isDiesel}
-        />
+        <div className="car-card">
+        <p className="car-info">Brand: {car.brand}</p>
+        <p className="car-info">Price: {car.price}</p>
+        <p className="car-info">Diesel: {car.isDiesel ? "Yes" : "No"}</p>
+    </div>  
     );
   });
   return <div className="cards-wrapper">{cards}</div>;
