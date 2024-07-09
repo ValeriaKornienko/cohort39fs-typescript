@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import SimponsCard from "../../components/SimpsonsCard/SimpsonsCard";
-import LoginForm from "../../components/LoginForm/LoginForm";
-import Feedback from "../../components/Feedback/Feedback";
+import SimponsCard from "components/SimpsonsCard/SimpsonsCard";
+import LoginForm from "components/LoginForm/LoginForm";
+import Feedback from "components/Feedback/Feedback";
 
 import "./styles.css";
 

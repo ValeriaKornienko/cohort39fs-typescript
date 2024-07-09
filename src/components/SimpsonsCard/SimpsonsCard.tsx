@@ -1,5 +1,5 @@
 import "./styles.css";
-import { SimpsonsCardProps } from "./SimpsonsCardPRops";
+import { SimpsonsCardProps } from "./types";
 
 function SimponsCard({avatar, firstName, lastName, job, hobby}: SimpsonsCardProps) {
   

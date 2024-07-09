@@ -1,7 +1,7 @@
 import {MouseEvent} from "react";
 
-import Button from "../Button/Button";
-import Input from "../Input/Input";
+import Button from "components/Button/Button";
+import Input from "components/Input/Input";
 
 import "./styles.css";
 
@@ -13,7 +13,7 @@ function LoginForm() {
   //   console.log("Trigger on button works, button is clicked");
   // };
 
-  const login = (event: MouseEvent) => {
+  const login = (event: MouseEvent): void => {
     event.preventDefault();
     console.log("User logged in succesfully");
   }
