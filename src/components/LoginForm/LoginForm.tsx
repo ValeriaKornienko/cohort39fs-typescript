@@ -3,7 +3,7 @@ import {MouseEvent} from "react";
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 
-import "./styles.css";
+import "./styles";
 
 function LoginForm() {
   /* Пример работы с onClick() */
@@ -22,7 +22,7 @@ function LoginForm() {
     <form className="login-form-container">
       <p className="title">Login form</p>
       <div className="inputs-container">
-        <Input
+        {/*<Input
           id="email-id"
           name="email"
           type="email"
@@ -35,7 +35,7 @@ function LoginForm() {
           type="password"
           placeholder="Enter your password"
           label="Password"
-        />
+        />*/}
       </div>
       <Button onClick={login} name="Login" type="submit" />
       {/* Пример работы с onClick() */}
