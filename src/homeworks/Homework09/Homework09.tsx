@@ -5,15 +5,6 @@ import Button from "components/Button/Button";
 import { Homewokr09Wrapper, JokeCard, Joke } from "./styles";
 
 function Homework09() {
-  {
-    /*const [searchRandomJokeValue, setSearchRandomJokeValue] =
-    useState<string>("");
- 
-
-  const onClick = (event: ChangeEvent<HTMLInputElement>) => {
-    setSearchRandomJokeValue(event.target.value);
-  };*/
-  }
   const [randomJoke, setRandomJoke] = useState<string | undefined>(undefined);
   const [error, setError] = useState<string | undefined>(undefined);
   const getRandomJoke = async () => {
@@ -30,10 +21,9 @@ function Homework09() {
     console.log(result);
 
     if (response.ok) {
-      // Действия по отображению данных на странице
+
       setRandomJoke(result.setup);
     } else {
-      // Действия по отображению ошибки на странице
       setError("Error message during random joke request");
     }
   };
