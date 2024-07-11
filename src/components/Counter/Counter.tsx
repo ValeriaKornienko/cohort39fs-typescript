@@ -1,5 +1,5 @@
 import {useState} from "react";
-import "./styles.css";
+import {StyledCounter, ButtonControl, StyledCount} from "./styles";
 import Button from "../Button/Button";
 
 function Counter() {
@@ -14,15 +14,15 @@ function Counter() {
     setCount((prevValue: number) => {return prevValue - 1});
   }
   return (
-    <div className="counter-wrapper">
-      <div className="button-control">
+    <StyledCounter>
+      <ButtonControl>
         <Button name="-" onClick={onMinus} />
-      </div>
-      <p className="count">{count}</p>
-      <div className="button-control">
+      </ButtonControl>
+      <StyledCount>{count}</StyledCount>
+      <ButtonControl>
         <Button name="+" onClick={onPlus} />
-      </div>
-    </div>
+      </ButtonControl>
+    </StyledCounter>
   );
 }
 
