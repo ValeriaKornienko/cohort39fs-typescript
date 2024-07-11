@@ -6,12 +6,13 @@ import './App.css';
 import Lesson07 from 'lessons/Lesson07/Lesson07';
 import Lesson08 from 'lessons/Lesson08/Lesson08';
 import Lesson09 from 'lessons/Lesson09/Lesson09';
+import Homework09 from 'homeworks/Homework09/Homework09';
 
 function App() {
   return (
     <div className="App">
       <GlobalStyles />
-      <Lesson09 />
+      <Homework09 />
     </div>
   );
 }
