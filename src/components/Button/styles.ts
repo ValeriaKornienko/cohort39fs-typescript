@@ -11,13 +11,13 @@ const getButtonColor = (disbled: boolean | undefined, isRed: boolean | undefined
   } else if (isRed) {
     return colors.ERROR;
   } else {
-    return colors.PRIMARY_BLUE;
+    return "#8B7B8B";
   }
 };
 
 export const StyledButton = styled("button")<StyledButtonProps>`
   height: 70px;
-  width: 100%;
+  width: 200px;
   border: none;
   border-radius: 4px;
   font-size: 20px;
