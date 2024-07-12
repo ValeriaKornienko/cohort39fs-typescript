@@ -22,7 +22,7 @@ function Homework09() {
 
     if (response.ok) {
 
-      setRandomJoke(result.setup);
+      setRandomJoke(`${result.setup} ${result.punchline}`);
     } else {
       setError("Error message during random joke request");
     }
